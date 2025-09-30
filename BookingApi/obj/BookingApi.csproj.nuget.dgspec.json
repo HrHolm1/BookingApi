@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Rambo\\RiderProjects\\BookingApi\\BookingApi\\BookingApi.csproj": {}
+    "C:\\Users\\Rambo\\Documents\\GitHub\\BookingApi\\BookingApi\\BookingApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Rambo\\RiderProjects\\BookingApi\\BookingApi\\BookingApi.csproj": {
+    "C:\\Users\\Rambo\\Documents\\GitHub\\BookingApi\\BookingApi\\BookingApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Rambo\\RiderProjects\\BookingApi\\BookingApi\\BookingApi.csproj",
+        "projectUniqueName": "C:\\Users\\Rambo\\Documents\\GitHub\\BookingApi\\BookingApi\\BookingApi.csproj",
         "projectName": "BookingApi",
-        "projectPath": "C:\\Users\\Rambo\\RiderProjects\\BookingApi\\BookingApi\\BookingApi.csproj",
+        "projectPath": "C:\\Users\\Rambo\\Documents\\GitHub\\BookingApi\\BookingApi\\BookingApi.csproj",
         "packagesPath": "C:\\Users\\Rambo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Rambo\\RiderProjects\\BookingApi\\BookingApi\\obj\\",
+        "outputPath": "C:\\Users\\Rambo\\Documents\\GitHub\\BookingApi\\BookingApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Rambo\\AppData\\Roaming\\NuGet\\NuGet.Config"
