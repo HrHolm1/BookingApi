@@ -16,6 +16,8 @@ public class BookingContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+        modelBuilder.HasDefaultSchema("Booking");
+        
         modelBuilder.Entity<Models.Booking>(entity =>
         {
             entity.HasKey(b => b.BookingId);

@@ -1,3 +1,6 @@
+using BookingApi.DataAccess;
+using BookingApi.Services;
+
 namespace BookingApi;
 
 public class Program
@@ -7,6 +10,8 @@ public class Program
         var builder = WebApplication.CreateBuilder(args);
 
         // Add services to the container.
+        builder.Services.AddDbContext<BookingContext>();
+        builder.Services.AddScoped<BookingService>();
 
         builder.Services.AddControllers();
         // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
