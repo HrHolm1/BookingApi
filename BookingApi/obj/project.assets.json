@@ -4775,19 +4775,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Rambo\\.nuget\\packages\\": {}
+    "C:\\Users\\robin\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Rambo\\Documents\\GitHub\\BookingApi\\BookingApi\\BookingApi.csproj",
+      "projectUniqueName": "C:\\Users\\robin\\Documents\\GitHub\\BookingApi\\BookingApi\\BookingApi.csproj",
       "projectName": "BookingApi",
-      "projectPath": "C:\\Users\\Rambo\\Documents\\GitHub\\BookingApi\\BookingApi\\BookingApi.csproj",
-      "packagesPath": "C:\\Users\\Rambo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Rambo\\Documents\\GitHub\\BookingApi\\BookingApi\\obj\\",
+      "projectPath": "C:\\Users\\robin\\Documents\\GitHub\\BookingApi\\BookingApi\\BookingApi.csproj",
+      "packagesPath": "C:\\Users\\robin\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\robin\\Documents\\GitHub\\BookingApi\\BookingApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Rambo\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\robin\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
@@ -4855,7 +4855,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

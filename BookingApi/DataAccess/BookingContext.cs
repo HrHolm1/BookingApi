@@ -11,7 +11,7 @@ public class BookingContext : DbContext
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
         optionsBuilder.UseSqlServer(
-            "Server=10.176.111.34;Database=RRH-BookingDB;User Id=CSt2023_t_5; Password=CSt2023T5!24;TrustCertificate=true;");
+            "Server=10.176.111.34;Database=RRH-BookingDB;User Id=CSt2023_t_5; Password=CSt2023T5!24;TrustServerCertificate=true;");
     }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -26,7 +26,7 @@ public class BookingContext : DbContext
             entity.Property(b => b.ContactPhone).IsRequired().HasMaxLength(20);
 
             entity.HasOne(b => b.Organization)
-                .WithMany(o => Bookings)
+                .WithMany(o => o.Bookings)
                 .HasForeignKey(b => b.OrganizationId);
         });
 
