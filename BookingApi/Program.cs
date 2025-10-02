@@ -1,3 +1,4 @@
+using System.Text.Json.Serialization;
 using BookingApi.DataAccess;
 using BookingApi.Services;
 
@@ -12,7 +13,8 @@ public class Program
         // Add services to the container.
         builder.Services.AddDbContext<BookingContext>();
         builder.Services.AddScoped<BookingService>();
-
+        builder.Services.AddControllers().AddJsonOptions(options => 
+            options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.Preserve);
         builder.Services.AddControllers();
         // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
         builder.Services.AddOpenApi();
@@ -24,6 +26,11 @@ public class Program
         {
             app.MapOpenApi();
         }
+        
+        app.UseCors(options => options
+            .AllowAnyHeader()
+            .AllowAnyMethod()
+            .AllowAnyOrigin());
 
         app.UseHttpsRedirection();
 

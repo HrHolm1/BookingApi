@@ -5,7 +5,6 @@ namespace BookingApi.DataAccess;
 public class BookingContext : DbContext
 {
     public DbSet<Models.Booking> Bookings { get; set; }
-    public DbSet<Models.User> Users { get; set; }
     public DbSet<Models.Organization> Organizations { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -37,14 +36,6 @@ public class BookingContext : DbContext
             entity.Property(o => o.Type).IsRequired().HasMaxLength(50);
             entity.Property(o => o.FreeDaysPerYear).HasDefaultValue(0);
         });
-
-        modelBuilder.Entity<Models.User>(entity =>
-        {
-            entity.HasKey(u => u.UserId);
-            entity.Property(u => u.Name).IsRequired().HasMaxLength(100);
-            entity.Property(u => u.Email).IsRequired().HasMaxLength(100);
-            entity.Property(u => u.Role).IsRequired().HasMaxLength(50);
-        });
-
+        
     }
 }
