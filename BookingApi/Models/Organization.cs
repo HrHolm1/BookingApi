@@ -7,5 +7,5 @@ public class Organization
     public string Type { get; set; } //Partners, Schools or external companies wanting to book.
     public int FreeDaysPerYear { get; set; }
     
-    public ICollection<Booking> Bookings { get; set; } // Navigation property
+    public ICollection<Booking> Bookings { get; set; } = new List<Booking>();
 }

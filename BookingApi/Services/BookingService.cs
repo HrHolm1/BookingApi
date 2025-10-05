@@ -32,6 +32,20 @@ public class BookingService
     //Create a new booking
     public async Task<Booking> CreateBooking(Booking booking)
     {
+        if (string.IsNullOrWhiteSpace(booking.Status))
+            booking.Status = "Pending";
+        
+        if (booking.Organization != null && booking.Organization.OrganizationId == 0)
+        {
+            _context.Organizations.Add(booking.Organization);
+            await _context.SaveChangesAsync();
+            booking.OrganizationId = booking.Organization.OrganizationId;
+        }
+        else if (booking.Organization != null && booking.Organization.OrganizationId > 0)
+        {
+            _context.Attach(booking.Organization);
+        }
+        
         _context.Bookings.Add(booking);
         await _context.SaveChangesAsync();
         return booking;
