@@ -23,6 +23,7 @@ public class BookingContext : DbContext
             entity.Property(b => b.ContactEmail).IsRequired().HasMaxLength(100);
             entity.Property(b => b.ContactPerson).IsRequired().HasMaxLength(100);
             entity.Property(b => b.ContactPhone).IsRequired().HasMaxLength(20);
+            entity.Property(b => b.Status).HasDefaultValue("Pending");
 
             entity.HasOne(b => b.Organization)
                 .WithMany(o => o.Bookings)

@@ -14,6 +14,6 @@ public class Booking
     public DateTime EndTime { get; set; }
 
     public int NumberOfParticipants { get; set; }
-    public string Status { get; set; } //Accepted or Rejected
+    public string? Status { get; set; } //Accepted or Rejected
 
 }
